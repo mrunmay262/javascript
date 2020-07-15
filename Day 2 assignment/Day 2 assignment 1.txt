@@ -1,0 +1,18 @@
+### write a js code which take input from the user and logs it in the console
+
+
+code:
+	Let age= prompt("what is your age");
+	console.log(age);
+
+
+	Let name = prompt("what is your name");
+	console.log(name);
+
+
+	Let occ = prompt("what is your occupation");
+	console.log(occ);
+
+
+	Let q = prompt("what is your qualification");
+	console.log(q);
