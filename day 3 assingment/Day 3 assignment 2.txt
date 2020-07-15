@@ -1,0 +1,54 @@
+   # write a difference between let, const and var with code examples
+
+
+
+	1. Difference between let and var:
+			a) A var variable can be redeclared and updated.
+			b) A let variable be be updated but not redeclared.
+		
+code for let:
+			An example of trying to redeclare a let variable:
+			// In editor:
+			<script>
+			let points = 50;
+			let points = 60;
+			</script>
+
+
+code for var:
+
+
+		let points = 50;
+		var winner = false;
+			if(points > 40) {
+ 				 var winner = true;
+			}
+	// If I call:
+		winner
+	// It now returns: 
+		true
+
+
+
+			2.  Difference between let and const:
+
+						const variables cannot be updated. let variables are made to be updated.
+
+
+code for const:
+
+ 		// Creating my person object:
+			const person = {
+ 			 name: 'Joseph',
+ 			 age: 33
+			}
+		// Calling person in the console:
+				person
+		// It returns:
+			{name: "Joseph", age: 33}
+		// If I then redeclare the age attribute:
+			person.age = 34
+		// When I call it:
+			person
+		// It returns:
+			{name: "Joseph", age: 34}
