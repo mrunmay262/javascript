@@ -1,0 +1,64 @@
+
+Question :
+Create a Class User with properties as name, age & email.
+He can login and logout
+Create another class Moderator which has all the features of User, plus additional functionality to Add
+coins and remove coins.
+Create one more class Admin which has all the features of Moderator plus additional features like add a
+Course and delete a particular course for a user.
+
+
+
+
+
+function user(name,age,email) {
+  this.name = name
+   this.age = age;
+  this.email = email;
+  
+}
+
+
+function Moderator() {
+  user.call(this);
+
+  this.add_coins = add_coins;
+  this.remove_coins = remove_coins;
+}
+
+
+function Admin() {
+  user.call(this);
+ Moderator.call(this);
+  
+
+this.add_course = add_course;
+  this.delete_course = delete_course;
+}
+
+
+
+
+
+
+
+
+
+
+Question 3:
+Using promises/async await/fetch get the random todos from the json placeholder api. And log all the
+completed todos to the console.
+
+
+// Select the entire list
+const list = document.querySelector('.js-todo-list');
+// Add a click event listener to the list and its children
+list.addEventListener('click', event => {
+  if (event.target.classList.contains('js-tick')) {
+    const itemKey = event.target.parentElement.dataset.key;
+    toggleDone(itemKey);
+  }
+});
+
+
+
